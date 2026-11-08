@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OPALIA — уходовая косметика и ароматы</title>
+<meta name="description" content="Собственная лаборатория: сыворотки, кремы и ароматы в рабочих концентрациях. Дерматест, без парабенов, подписка на уход.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c0c0e'/%3E%3Ctext x='32' y='43' font-size='34' text-anchor='middle' fill='%23c8a15a' font-family='Georgia'%3EO%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body data-page="home">
+<div class="tstrip"><div class="tstrip-in"><span>Бесплатная доставка при заказе от 4 000 ₽</span><span>Промокод GLOW15 — скидка 15%</span><span>Возврат 14 дней по закону</span><span>Ритуалы красоты в тёмных тонах</span><span>Бесплатная доставка при заказе от 4 000 ₽</span><span>Промокод GLOW15 — скидка 15%</span><span>Возврат 14 дней по закону</span><span>Ритуалы красоты в тёмных тонах</span></div></div>
+<header class="hdr"><div class="container hdr-inner">
+  <a class="logo" href="index.html">OPALIA<i>.</i></a>
+  <nav class="nav"><a href="index.html" class="active">Главная</a><a href="catalog.html" class="">Каталог</a><a href="about.html" class="">О бренде</a><a href="delivery.html" class="">Доставка</a><a href="returns.html" class="">Возврат</a><a href="faq.html" class="">FAQ</a><a href="contacts.html" class="">Контакты</a></nav>
+  <div class="hdr-actions">
+    <button id="search-btn" class="icon-btn" title="Поиск"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+    
+    <a href="favorites.html" class="icon-btn hide-m" title="Избранное"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7.5-4.7-10-9.2C.4 8.2 2.3 4.5 6 4.5c2.2 0 3.7 1.2 4.6 2.7L12 9l1.4-1.8c.9-1.5 2.4-2.7 4.6-2.7 3.7 0 5.6 3.7 4 7.3C19.5 16.3 12 21 12 21z"/></svg><span id="fav-count" class="badge-dot">0</span></a>
+    <a href="cart.html" class="icon-btn" title="Корзина"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 7h12l1.2 13.2a1.8 1.8 0 0 1-1.8 1.8H6.6a1.8 1.8 0 0 1-1.8-1.8L6 7z"/><path d="M9 10V6a3 3 0 0 1 6 0v4"/></svg><span id="cart-count" class="badge-dot">0</span></a>
+    <button class="burger" id="burger-btn" title="Меню"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h10"/></svg></button>
+  </div>
+</div></header>
+<div id="mnav" class="mnav">
+  <div class="mnav-head"><span class="logo">OPALIA<i>.</i></span><button id="mnav-close" class="icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 5l14 14M19 5 5 19"/></svg></button></div>
+  <nav><a class="big" href="index.html">Главная</a><a class="big" href="catalog.html">Каталог</a><a class="big" href="about.html">О бренде</a><a class="big" href="delivery.html">Доставка</a><a class="big" href="returns.html">Возврат</a><a class="big" href="faq.html">FAQ</a><a class="big" href="contacts.html">Контакты</a></nav>
+  <div class="mnav-sub">
+    <a href="favorites.html">Избранное</a><a href="cart.html">Корзина</a>
+    
+    <a href="offer.html">Публичная оферта</a><a href="privacy.html">Политика конфиденциальности</a>
+    <a href="contacts.html">Контакты и реквизиты</a>
+  </div>
+</div>
+<div id="search-ov" class="search-ov"><div class="search-box">
+  <div class="search-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="search-in" placeholder="Поиск по каталогу…" autocomplete="off"><button id="search-close" class="icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 5l14 14M19 5 5 19"/></svg></button></div>
+  <div id="search-res"></div>
+</div></div>
+<main>
+
+<section class="hero hero--blob"><div class="container hero-inner"><div class="hero-grid">
+  <div>
+    <span class="eyebrow">Лаборатория ухода · Москва</span>
+    <h1>Ритуалы красоты <br>в тёмных <em>тонах</em></h1>
+    <p class="hero-sub">Работающие концентрации активов, дерматест и открытые составы. Без парабенов, сульфатов и пустых обещаний.</p>
+    <div class="hero-cta"><a class="btn btn-p btn-lg" href="catalog.html">Подобрать уход <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a><a class="btn btn-ghost btn-lg" href="#skin">Тест типа кожи</a></div>
+    <div class="hero-stats"><div><b>24</b><span>средства в линии</span></div><div><b>4.8</b><span>средняя оценка</span></div><div><b>0%</b><span>парабенов и сульфатов</span></div></div>
+  </div>
+  <div class="hero-blob">
+    <div class="float-card reveal d1">
+      <img src="assets/img/opl-p-serum-1.jpg" alt="">
+      <div><b>Сыворотка с витамином C 10%</b><small>Хит лаборатории</small><a class="btn btn-p" href="product.html?id=o5">Смотреть</a></div>
+    </div>
+    <span class="blob-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 20C4 12 9 6 20 4c0 11-6 16-14 16z"/><path d="M4 20c4-6 8-9 12-11"/></svg> Веган · Cruelty-free · Рециклинг упаковки</span>
+  </div>
+</div></div></section>
+<section class="sec"><div class="container">
+  <div class="sec-head reveal"><div><span class="sec-eyebrow">Bestsellers</span><h2>Бестселлеры сезона</h2><p class="sub">Что покупают снова и снова.</p></div><a class="link-arr" href="catalog.html">Смотреть все <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a></div>
+  <div class="pgrid" style="--gcols:4"><article class="pcard"><div class="pcard-media"><div class="pcard-badges"></div><a class="pcard-link" href="product.html?id=o1"><img src="assets/img/opl-p-set-1.jpg" alt="" loading="lazy"></a></div><div class="pcard-info"><div class="pcard-cat">sets</div><a class="pcard-link" href="product.html?id=o1"><div class="pcard-name">Набор «Утренний ритуал»</div></a><div class="pcard-meta"><div class="price">6 900 ₽</div></div></div></article><article class="pcard"><div class="pcard-media"><div class="pcard-badges"></div><a class="pcard-link" href="product.html?id=o3"><img src="assets/img/opl-p-set-3.jpg" alt="" loading="lazy"></a></div><div class="pcard-info"><div class="pcard-cat">sets</div><a class="pcard-link" href="product.html?id=o3"><div class="pcard-name">Подарочный набор «Сияние»</div></a><div class="pcard-meta"><div class="price">12 900 ₽</div></div></div></article><article class="pcard"><div class="pcard-media"><div class="pcard-badges"></div><a class="pcard-link" href="product.html?id=o5"><img src="assets/img/opl-p-serum-1.jpg" alt="" loading="lazy"></a></div><div class="pcard-info"><div class="pcard-cat">skincare</div><a class="pcard-link" href="product.html?id=o5"><div class="pcard-name">Сыворотка с витамином C 10%</div></a><div class="pcard-meta"><div class="price">4 900 ₽</div></div></div></article><article class="pcard"><div class="pcard-media"><div class="pcard-badges"></div><a class="pcard-link" href="product.html?id=o10"><img src="assets/img/opl-p-cream-1.jpg" alt="" loading="lazy"></a></div><div class="pcard-info"><div class="pcard-cat">skincare</div><a class="pcard-link" href="product.html?id=o10"><div class="pcard-name">Крем «Глубокое питание»</div></a><div class="pcard-meta"><div class="price">5 200 ₽</div></div></div></article></div>
+</div></section>
+<section class="sec tint" id="skin"><div class="container">
+  <div class="skin-finder reveal">
+    <div><span class="sec-eyebrow">Подбор за 1 минуту</span><h3>Какой у вас тип кожи?</h3>
+    <p>Выберите — и мы покажем средства, созданные под него: от сывороток до ночного крема.</p></div>
+    <div class="chipset"><a class="chip" href="catalog.html?q=сухая">Сухая</a><a class="chip" href="catalog.html?q=жирная">Жирная</a><a class="chip" href="catalog.html?q=комбинированная">Комбинированная</a><a class="chip" href="catalog.html?q=чувствительная">Чувствительная</a><a class="chip" href="catalog.html?q=обезвоженная">Обезвоженная</a></div>
+  </div>
+</div></section>
+<section class="sec"><div class="container">
+  <div class="sec-head reveal"><div><span class="sec-eyebrow">Sets</span><h2>Готовые ритуалы</h2><p class="sub">Наборы, собранные косметологами лаборатории.</p></div><a class="link-arr" href="catalog.html?cat=sets">Смотреть все <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a></div>
+  <div class="cat-tiles" style="grid-template-columns:repeat(2,1fr)"><a class="set-card" href="catalog.html?cat=sets"><img src="assets/img/opl-p-set-1.jpg" alt="" loading="lazy">
+      <div class="set-card-in"><b>«Утренний ритуал»</b><p>Тоник + витамин C + SPF — сияние за 3 шага</p><span class="link-arr">В набор <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></span></div></a><a class="set-card" href="catalog.html?cat=sets"><img src="assets/img/opl-p-set-2.jpg" alt="" loading="lazy">
+      <div class="set-card-in"><b>«Вечерний уход»</b><p>Масло + ретинол + ночной крем — обновление ночью</p><span class="link-arr">В набор <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></span></div></a><a class="set-card" href="catalog.html?cat=sets"><img src="assets/img/opl-p-set-3.jpg" alt="" loading="lazy">
+      <div class="set-card-in"><b>«Сияние» подарочный</b><p>4 предмета в шкатулке — готовый подарок</p><span class="link-arr">В набор <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></span></div></a><a class="set-card" href="catalog.html?cat=sets"><img src="assets/img/opl-p-set-4.jpg" alt="" loading="lazy">
+      <div class="set-card-in"><b>«Мини» тревел</b><p>Форматы до 100 мл — уход в поездке</p><span class="link-arr">В набор <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></span></div></a></div>
+</div></section>
+<section class="sec tint"><div class="container">
+  <div class="sec-head reveal"><div><span class="sec-eyebrow">Skincare</span><h2>Сыворотки и кремы</h2><p class="sub">Активы в рабочих концентрациях — без маркетинговой воды.</p></div><a class="link-arr" href="catalog.html?cat=skincare">Смотреть все <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a></div>
+  <div class="pgrid" style="--gcols:4"><article class="pcard"><div class="pcard-media"><div class="pcard-badges"></div><a class="pcard-link" href="product.html?id=o5"><img src="assets/img/opl-p-serum-1.jpg" alt="" loading="lazy"></a></div><div class="pcard-info"><div class="pcard-cat">skincare</div><a class="pcard-link" href="product.html?id=o5"><div class="pcard-name">Сыворотка с витамином C 10%</div></a><div class="pcard-meta"><div class="price">4 900 ₽</div></div></div></article><article class="pcard"><div class="pcard-media"><div class="pcard-badges"></div><a class="pcard-link" href="product.html?id=o6"><img src="assets/img/opl-p-serum-2.jpg" alt="" loading="lazy"></a></div><div class="pcard-info"><div class="pcard-cat">skincare</div><a class="pcard-link" href="product.html?id=o6"><div class="pcard-name">Сыворотка с ретинолом 0,3%</div></a><div class="pcard-meta"><div class="price">5 900 ₽</div></div></div></article><article class="pcard"><div class="pcard-media"><div class="pcard-badges"></div><a class="pcard-link" href="product.html?id=o7"><img src="assets/img/opl-p-serum-3.jpg" alt="" loading="lazy"></a></div><div class="pcard-info"><div class="pcard-cat">skincare</div><a class="pcard-link" href="product.html?id=o7"><div class="pcard-name">Сыворотка с ниацинамидом 10%</div></a><div class="pcard-meta"><div class="price">3 900 ₽</div></div></div></article><article class="pcard"><div class="pcard-media"><div class="pcard-badges"></div><a class="pcard-link" href="product.html?id=o8"><img src="assets/img/opl-p-serum-4.jpg" alt="" loading="lazy"></a></div><div class="pcard-info"><div class="pcard-cat">skincare</div><a class="pcard-link" href="product.html?id=o8"><div class="pcard-name">Сыворотка с гиалуроновой кислотой</div></a><div class="pcard-meta"><div class="price">4 500 ₽</div></div></div></article></div>
+</div></section>
+<section class="sec"><div class="container">
+  <div class="sec-head reveal"><div><span class="sec-eyebrow">Reviews</span><h2>Отзывы лаборатории</h2><p class="sub">Мы читаем каждый — и отвечаем на все.</p></div><a class="link-arr" href="faq.html">Все вопросы <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a></div>
+  <div class="values" style="grid-template-columns:repeat(3,1fr)"><div class="review-item reveal"><div class="review-head"><b>Настя, 27</b><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg></div><p style="color:var(--muted);font-size:14.5px">Сыворотка с витамином C — единственная, после которой у меня реально ушёл серый оттенок лица. Три месяца — и фотографируюсь без фильтров.</p></div><div class="review-item reveal"><div class="review-head"><b>Лера, 34</b><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg></div><p style="color:var(--muted);font-size:14.5px">Взяла набор «Вечерний уход». Ретинол без шелушения — впервые. Ночью наношу и засыпаю, утром кожа как после процедур.</p></div><div class="review-item reveal"><div class="review-head"><b>Дина, 41</b><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></svg></div><p style="color:var(--muted);font-size:14.5px">«Глубокое питание» спасло кожу от московской зимы. Заказываю уже третий раз, доставляют быстрее, чем успеваю закончить банку.</p></div></div>
+</div></section>
+<section class="sec" style="padding-top:0"><div class="container">
+  <div class="sub-block reveal">
+    <div><h3>OPALIA BOX — подписка на уход</h3><p>Раз в 2 месяца — набор из 4 средств под ваш тип кожи со скидкой 25% и бесплатной доставкой. Отмена в один клик.</p></div>
+    <a class="btn btn-p btn-lg" href="catalog.html?cat=sets">Попробовать</a>
+  </div>
+</div></section>
+</main>
+<footer class="ftr"><div class="container">
+  <div class="ftr-cols">
+    <div class="ftr-brand">
+      <span class="logo">OPALIA<i>.</i></span>
+      <p>Собственная лаборатория, формулы без парабенов, дермatest, наборы и подписка на уход.</p>
+      <div class="ftr-social"><a href="#" title="Telegram" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m21 4-18 8 5.5 2L10 19l3-3.5L18.5 18z"/><path d="M8.5 14 18 6.5"/></svg></a><a href="#" title="Instagram*" aria-label="Instagram*"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg></a><a href="#" title="Pinterest" aria-label="Pinterest"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M9 21c1-4 2-8.5 2-8.5m0-1C10.5 9 12 8 13.5 8c2 0 3.2 1.3 3.2 3.2 0 2.6-1.7 4.8-3.9 4.8-1 0-1.8-.6-1.6-1.6"/></svg></a></div>
+      <form data-toast class="ftr-sub"><input type="email" placeholder="E-mail для писем о новинках"><button class="btn btn-p" type="submit">Подписаться</button></form>
+    </div>
+    <div class="ftr-col"><h5>Каталог</h5><a href="catalog.html?cat=sets">Наборы</a><a href="catalog.html?cat=skincare">Сыворотки и кремы</a><a href="catalog.html?cat=fragrance">Ароматы</a><a href="catalog.html?cat=body">Тело</a><a href="catalog.html?cat=masks">Маски</a><a href="catalog.html?cat=home">Дом и свечи</a></div>
+    <div class="ftr-col"><h5>Покупателям</h5><a href="delivery.html">Доставка и оплата</a><a href="returns.html">Возврат и обмен</a><a href="faq.html">Частые вопросы</a><a href="about.html">О бренде</a><a href="contacts.html">Контакты</a></div>
+    <div class="ftr-col"><h5>Документы</h5><a href="offer.html">Публичная оферта</a><a href="privacy.html">Политика конфиденциальности</a><a href="consent.html">Согласие на обработку ПД</a><a href="contacts.html">Реквизиты</a></div>
+  </div>
+  <div class="ftr-bottom">
+    <span>© 2026 ООО «Опалия» · ИНН 7723618450 · 1217700456789</span>
+    <div class="pay-list"><span>Банковская карта</span><span>СБП</span><span>Долями (4 платежа)</span></div>
+    <span>Цены на сайте носят демонстрационный характер</span>
+  </div>
+</div></footer>
+<div class="cookie" id="cookie"><p>Мы используем cookies для работы корзины и аналитики. Продолжая пользоваться сайтом, вы соглашаетесь с <a href="privacy.html">политикой обработки данных</a>.</p><div class="cookie-row"><button class="btn btn-p" id="cookie-ok">Хорошо</button><a class="btn btn-ghost" href="privacy.html">Подробнее</a></div></div>
+<div class="toast-stack"></div>
+<button class="totop" aria-label="Наверх"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 19V5m-6 6 6-6 6 6"/></svg></button>
+<div class="modal" id="quick-modal"><div class="mbox"><button class="mclose"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 5l14 14M19 5 5 19"/></svg></button><div class="qv"><div class="qv-img"><img src="" alt=""></div><div class="qv-body"></div></div></div></div>
+<div class="modal" id="sizeguide-modal"><div class="mbox"><button class="mclose"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 5l14 14M19 5 5 19"/></svg></button>
+  <h3 style="font-size:24px;margin-bottom:6px">Таблица размеров</h3>
+  <p style="color:var(--muted);font-size:14px">Измерения в сантиметрах. Если вы между размерами — берите больший.</p>
+  <table class="sizeguide-tbl"><tr><th>Размер</th><th>Грудь</th><th>Талия</th><th>Бёдра</th></tr>
+  <tr><td>XS</td><td>80–84</td><td>62–66</td><td>88–92</td></tr>
+  <tr><td>S</td><td>84–88</td><td>66–70</td><td>92–96</td></tr>
+  <tr><td>M</td><td>88–92</td><td>70–74</td><td>96–100</td></tr>
+  <tr><td>L</td><td>92–96</td><td>74–78</td><td>100–104</td></tr>
+  <tr><td>XL</td><td>96–102</td><td>78–84</td><td>104–110</td></tr></table>
+</div></div>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body></html>
